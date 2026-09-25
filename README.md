@@ -102,6 +102,17 @@
 
 ---
 
+## 关于作者
+
+我是**行途**，一线技术人 + 仍在写代码。这里沉淀行途品牌与内容创作的视觉规范：三原色、封面黑白交替、正文排版主题，全部来自真实出图流程。
+
+- 🔔 公众号 **「行途技术手记」**：微信搜索关注，看 AI 工程化落地实战
+- 🐙 GitHub：[@xingtu1996](https://github.com/xingtu1996)
+- 📦 仓库：[xingtu1996/xingtu-design](https://github.com/xingtu1996/xingtu-design)
+
+---
+
+
 ## License
 
 MIT — Use it, modify it, share it.
