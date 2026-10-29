@@ -1,5 +1,74 @@
-# 本仓已归档（Archived · 2026-10-12）
+# xingtu-design · 行途品牌视觉规范独立仓
 
-本仓品牌视觉规范已合并至 [harness-kit/docs/brand-visual.md](https://github.com/xingtu1996/harness-kit/blob/main/docs/brand-visual.md)（2026-10-12）。
+> Build in public：行途 XingTu 品牌视觉标准的独立收纳仓——三原色体系、封面黑白交替律动、正文排版主题、信息图规范，全部来自真实出图流程。
+> 本仓为独立维护主题仓；同一份规范在 [harness-kit/docs/brand-visual.md](https://github.com/xingtu1996/harness-kit/blob/main/docs/brand-visual.md) 作为 harness 运行时镜像，两处保持同步、双向互链。
 
-本仓保留为只读存档，内容已全部迁至新家；历史与 star 不受影响。
+## 定位
+
+品牌视觉规范是跨渠道复用的资产：公众号封面、视频号头像、信息图、名片页统一套用同一套色板与排版纪律。本仓收纳规范正本，避免规范散落在各发布包与站点页面中。
+
+## 三原色体系
+
+| 色 | 值 | 用途 |
+|---|---|---|
+| 行途橙红 | `#F2644F` | 强调色：节标题字 + 下划线、封面强调词、信息图标注 |
+| 纯黑 | `#1a1a1a` | 正文主字、纯黑封面底、信息图黑条 |
+| 纯白 | `#FFFFFF` | 纯白封面底、信息图底、阅读页底 |
+| 灰阶 | `#7A8087` / `#A8ADB3` | 副标、图注、版权行 |
+
+**禁用**：纸白 `#F7F5F2`（偏灰）；大红 `#d71a1b`（旧主色，太艳）；蓝 / 荧光绿等其他主色。
+
+> 为什么选橙红？橙红暖、不刺眼，在纯白底上有足够对比但不具攻击性——贴合「工程实践者」的克制感。大红太像促销，蓝色烂大街，荧光绿太潮。
+
+## 封面设计规范
+
+### 律动：黑白交替
+
+- 一篇黑底、一篇白底交替——不是审美随机，而是让读者在信息流里「隔一篇换个节奏」，避免视觉疲劳。
+- 白底 = 纯白 `#FFFFFF`；黑底 = 纯黑 `#1a1a1a`（不用深灰）。
+- 头条尺寸：900×383（2.35:1）。
+
+### 排版规则
+
+- 黑底封面：白字主标 + 橙红强调词。
+- 白底封面：黑字主标 + 橙红强调词。
+- 主标字数 × 字号 < 470px，防孤字换行（12 字用 ≤38px）。
+- 左上合集名橙红字标签 + 主标 + 副标。
+
+## 正文排版主题
+
+### Review 评测风（橙红系，默认干货文）
+
+- h2 节标题：橙红字 + 橙红下划线（inline-block 通栏）。
+- 加粗：全篇 ≤3 处，加粗字色用纯黑（不用橙红 / 红色）。
+- 强调色统一 `#F2644F`，不出现两个红打架。
+- 正文 left 对齐（不 justify，防短行字间距拉宽）。
+
+### Pure 零色块（仅纯情绪 / 回忆类随笔）
+
+- 无强调色、无色块、无下划线——纯文字本身说话。
+
+## 信息图 / 引子图
+
+- 底 = 纯白 `#FFFFFF`。
+- 体系 = 黑、橙红、灰三原色。
+- 密度：≥1 图 / 千字，A 档 8–12 张，每大节 ≥1 张。
+- 素材只取正文原文，不编造；外部数据图标来源；自制图标标注「行途 · 合集名」。
+
+四类模板：三栏对比 / 数字卡 / 卡片矩阵 / 概念示意。
+
+## 与聚合仓的关系
+
+- 运行时镜像：[harness-kit/docs/brand-visual.md](https://github.com/xingtu1996/harness-kit/blob/main/docs/brand-visual.md)（harness 生成器消费同一份规范）。
+- 技能编排：[xingtu-skills](https://github.com/xingtu1996/xingtu-skills) 收录消费视觉规范的内容 / 配图技能。
+- CLI 工具：[xingtu-tools](https://github.com/xingtu1996/xingtu-tools) 收录出图与校验脚本。
+
+## 关于作者 · 行途 XingTu
+
+- 公众号「行途技术手记」：微信搜索关注，看 AI 工程化落地实战。
+- GitHub：[@xingtu1996](https://github.com/xingtu1996)
+- 方法论旗舰仓：[xingtu-ai-engineering](https://github.com/xingtu1996/xingtu-ai-engineering)
+
+## License
+
+MIT — Use it, modify it, share it. 借鉴这套规范可自由使用，不强制署名；重要的是做出自己的品牌感。
