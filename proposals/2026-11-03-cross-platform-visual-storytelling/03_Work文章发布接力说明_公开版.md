@@ -9,7 +9,7 @@
 3. 本目录 `02_FindSkill路由与技能漂移审计.md`：能力发现和安全验证。
 4. [Design PR #2](https://github.com/xingtu1996/xingtu-design/pull/2) 的既有三类样板与封面规则。
 5. [Design PR #3](https://github.com/xingtu1996/xingtu-design/pull/3) 的截图来源、许可与 SHA 审核。
-6. [xingtu-skills 发布管线](https://github.com/xingtu1996/xingtu-skills/blob/main/PUBLISHING-PIPELINE.md) 与实际已安装 Skill 的本地版本。
+6. [xingtu-skills 发布管线](https://github.com/xingtu1996/xingtu-skills/blob/main/PUBLISHING-PIPELINE.md)、[视觉叙事候选 Skill PR #10](https://github.com/xingtu1996/xingtu-skills/pull/10) 与实际已安装 Skill 的本地版本（候选 Skill 仍为 Draft/PILOT，未完成本机安装与触发验收）。
 7. **发文状态已核对（2026-11-03）**：[私有 Vault PR #12](https://github.com/xingtu1996/xingtu-vault/pull/12) 的 DeepSeek Super Agent v4 **已合并归档**，该 PR 记录的微信草稿步骤尚未完成，不再视为当前开放待办；[私有 Vault PR #18](https://github.com/xingtu1996/xingtu-vault/pull/18) 是**当前开放 Draft** 的 11-04 候选《周报之外，一个项目该留下什么？》，PR 自述已在 22:26（北京时间）通过 draft/get 回读私人草稿，但**未公开发布、未批准群发**。Work 必须重新核对真实在线状态，不能凭上述快照重复建稿。若 Work 当前任务对应其他文章，以实际发布包为准。
 
 ## 二、接力工作清单（先发现已有动作，再执行）
