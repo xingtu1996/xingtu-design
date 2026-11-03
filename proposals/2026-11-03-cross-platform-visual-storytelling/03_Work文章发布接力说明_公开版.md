@@ -4,19 +4,22 @@
 
 ## 一、优先读取的文件（按顺序）
 
-1. 本目录 `00_决策记录与现存冲突.md`：冲突、证据边界、不得宣称能力。
-2. 本目录 `01_视觉叙事与跨平台编排规范.md`：图文设计和渠道变体。
-3. 本目录 `02_FindSkill路由与技能漂移审计.md`：能力发现和安全验证。
-4. [Design PR #2](https://github.com/xingtu1996/xingtu-design/pull/2) 的既有三类样板与封面规则。
-5. [Design PR #3](https://github.com/xingtu1996/xingtu-design/pull/3) 的截图来源、许可与 SHA 审核。
-6. [xingtu-skills 发布管线](https://github.com/xingtu1996/xingtu-skills/blob/main/PUBLISHING-PIPELINE.md)、[视觉叙事候选 Skill PR #10](https://github.com/xingtu1996/xingtu-skills/pull/10) 与实际已安装 Skill 的本地版本（候选 Skill 仍为 Draft/PILOT，未完成本机安装与触发验收）。
-7. **发文状态已核对（2026-11-03）**：[私有 Vault PR #12](https://github.com/xingtu1996/xingtu-vault/pull/12) 的 DeepSeek Super Agent v4 **已合并归档**，该 PR 记录的微信草稿步骤尚未完成，不再视为当前开放待办；[私有 Vault PR #18](https://github.com/xingtu1996/xingtu-vault/pull/18) 是**当前开放 Draft** 的 11-04 候选《周报之外，一个项目该留下什么？》，PR 自述已在 22:26（北京时间）通过 draft/get 回读私人草稿，但**未公开发布、未批准群发**。Work 必须重新核对真实在线状态，不能凭上述快照重复建稿。若 Work 当前任务对应其他文章，以实际发布包为准。
+1. 本目录 `04_SystemDesign_跨平台视觉资产编译架构.md`、`visual-asset-contract.schema.json`：设计系统架构、状态机、可验证的输入输出契约。
+2. 本目录 `05_提示词与多Agent交接手册.md`：可直接复制的任务提示词。
+3. 本目录 `06_持续迭代_验收与版本治理.md`、`07_动态工具评估与质量基线.md`：质量门禁、工具选型、回退及 [Issue #5](https://github.com/xingtu1996/xingtu-design/issues/5) 迭代账本。
+4. 本目录 `00_决策记录与现存冲突.md`：冲突、证据边界、不得宣称能力。
+5. 本目录 `01_视觉叙事与跨平台编排规范.md`：图文设计和渠道变体。
+6. 本目录 `02_FindSkill路由与技能漂移审计.md`：能力发现和安全验证。
+7. [Design PR #2](https://github.com/xingtu1996/xingtu-design/pull/2) 的既有三类样板与封面规则。
+8. [Design PR #3](https://github.com/xingtu1996/xingtu-design/pull/3) 的截图来源、许可与 SHA 审核。
+9. [xingtu-skills 发布管线](https://github.com/xingtu1996/xingtu-skills/blob/main/PUBLISHING-PIPELINE.md)、[视觉叙事候选 Skill PR #10](https://github.com/xingtu1996/xingtu-skills/pull/10) 与实际已安装 Skill 的本地版本（候选 Skill 仍为 Draft/PILOT，未完成本机安装与触发验收）。
+10. **发文状态快照（2026-11-04 核对 PR 描述；实际 Work 执行仍须再次检查）**：[私有 Vault PR #12](https://github.com/xingtu1996/xingtu-vault/pull/12) 的 DeepSeek Super Agent v4 **已合并归档**，该 PR 记录的微信草稿步骤尚未完成，不再视为当前开放待办；[私有 Vault PR #18](https://github.com/xingtu1996/xingtu-vault/pull/18) 是**当前开放 Draft** 的候选《AI 进入项目组，先把协作规则说清楚》v5；PR 自述已在 2026-11-03 23:09（北京时间）通过 draft/get 回读新的私人草稿，并保留 v3 回退件，GIF 持续播放仍待手机验证；**未公开发布、未批准群发**。Work 必须重新核对真实在线状态，不能凭上述快照重复建稿。若 Work 当前任务对应其他文章，以实际发布包为准。
 
 ## 二、接力工作清单（先发现已有动作，再执行）
 
 **阶段 0｜对账**
 - 先定位 Work 当前既有“发布文章”动作：对应文章标题、母稿版本、发布包路径/manifest/SHA、计划渠道、最新人工审稿意见、当前草稿箱实际状态；未知写“待核”，不凭旧聊天推定。
-- 避免与其他 Work/Muse/本地 Codex 并行写同一发布包。要有原子版本号、修改记录、预先确定接力所有者。**若当前任务是 PR #18，已存在一份私人草稿，应优先只读核查并做设计差异建议，不再盲目 draft/add，也不覆盖已审 v3。**
+- 避免与其他 Work/Muse/本地 Codex 并行写同一发布包。要有原子版本号、修改记录、预先确定接力所有者。**若当前任务是 PR #18，已存在一份私人草稿，应优先只读核查并做设计差异建议，不再盲目 draft/add，也不覆盖已审 v3/v5。**
 - 对齐项目仓：设计规范源 = xingtu-design；私有生产包 = xingtu-vault；执行能力 = xingtu-skills；真实发布状态以平台回查为准。公开设计仓绝不落私有客户/账户信息。
 
 **阶段 1｜事实与视觉分镜**
@@ -53,4 +56,4 @@
 
 ## 四、直接可复制的任务指令（给已有 Work 会话）
 
-> 请以当前正在执行的**已有文章发布任务**为主体，不新建重复文章、不假定已发布。先读取 xingtu-design 最新视觉叙事 Draft PR 本目录 00/01/02/03，以及已存在的 Design PR #2/#3 和 xingtu-skills 的发布管线；读取你实际负责的私有发布包并核对 manifest 与最新稿。将静态分镜、适当的跨平台图卡和真实证据截图纳入当前包，按 claim→source→asset 建立溯源表，检查 Skill 实际可用性。先做可读静态版；动态图只有通过安全沙箱和移动端验证才加做。走既有事实/隐私/版权/排版/移动预览门禁；只有既有明确授权才可建微信私人草稿并 draft/get 回读，不得自动群发或发布其他平台。最后按结论→证据→风险→建议动作反馈实际 PR、文件、版本和阻断。
+> 请以当前正在执行的**已有文章发布任务**为主体，不新建重复文章、不假定已发布。先读取 xingtu-design 最新视觉叙事 Draft PR 本目录 04 System Design、05 提示词、06 迭代机制、07 动效工具评估及 00/01/02/03，以及已存在的 Design PR #2/#3 和 xingtu-skills 的发布管线；读取你实际负责的私有发布包并核对 manifest 与最新稿。将静态分镜、适当的跨平台图卡和真实证据截图纳入当前包，按 claim→source→asset 建立溯源表，检查 Skill 实际可用性。先做可读静态版；动态图只有通过安全沙箱和移动端验证才加做。走既有事实/隐私/版权/排版/移动预览门禁；只有既有明确授权才可建微信私人草稿并 draft/get 回读，不得自动群发或发布其他平台。最后按结论→证据→风险→建议动作反馈实际 PR、文件、版本和阻断。
