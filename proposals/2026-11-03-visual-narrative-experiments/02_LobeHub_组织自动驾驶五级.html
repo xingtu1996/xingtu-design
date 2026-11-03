@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1280px;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",Arial,sans-serif;padding:56px 64px 48px}
+.hdr{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:36px}
+.hdr h1{font-size:40px;font-weight:800;color:#1a1a1a;letter-spacing:-1px}
+.hdr h1 .r{color:#F2644F}
+.hdr .tag{font-size:15px;color:#9AA0A6;font-weight:600}
+.stage{position:relative;display:flex;align-items:center;gap:26px;margin-bottom:14px}
+.stage .start{width:118px;text-align:center}
+.stage .start .dot{width:58px;height:58px;border-radius:50%;background:#1a1a1a;color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.stage .start .lb{font-size:15px;font-weight:700;color:#333}
+.arrowline{position:absolute;left:150px;right:132px;top:29px;height:6px;background:linear-gradient(90deg,#1a1a1a 0%,#555B62 100%);border-radius:3px}
+.arrowline::after{content:"";position:absolute;right:-14px;top:-9px;border:12px solid transparent;border-left:16px solid #1a1a1a}
+.gates{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative;z-index:2;padding-top:4px}
+.gate{background:#fff;border:2.5px solid #F2644F;border-radius:10px;padding:24px 16px 20px;position:relative;box-shadow:0 3px 14px rgba(215,26,27,.10)}
+.gate .no{position:absolute;top:-20px;left:14px;background:#F2644F;color:#fff;font-weight:800;font-size:15px;padding:5px 12px;border-radius:6px}
+.gate .nm{font-size:21px;font-weight:800;color:#1a1a1a;margin:8px 0 6px}
+.gate .sym{font-size:13px;color:#555B62;line-height:1.5}
+.gate .key{margin-top:10px;font-size:12.5px;font-weight:700;color:#1a1a1a;border-top:1px dashed #E2E5E9;padding-top:9px}
+.finish{position:absolute;right:0;top:2px;width:112px;text-align:center}
+.finish .flag{width:64px;height:64px;margin:0 auto 8px;border-radius:12px;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800}
+.finish .lb{font-size:14px;font-weight:800;color:#1a1a1a}
+.foot{margin-top:34px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #E6E8EA;padding-top:16px}
+.foot .motto{font-size:18px;font-weight:800;color:#1a1a1a}
+.foot .motto .r{color:#F2644F}
+.foot .src{font-size:13px;color:#A8ADB3}
+</style></head><body>
+
+<div class="hdr">
+  <h1>让 Super-agent 当同事：组织也有<span class="r">自动驾驶五级</span></h1>
+  <div class="tag">概念锚点图 · 无水印矢量渲染</div>
+</div>
+
+<div class="stage">
+  <div class="start"><div class="dot">人做所有事</div><div class="lb">协作卡在交接</div></div>
+  <div class="arrowline"></div>
+  <div class="finish"><div class="flag">人只留<br>方向与担责</div><div class="lb">Agent 当同事</div></div>
+</div>
+
+<div class="gates">
+  <div class="gate">
+    <div class="no">L1</div>
+    <div class="nm">问答工具</div>
+    <div class="sym">问一句答一句，关掉窗口就结束</div>
+    <div class="key">钥匙：把零散问答交给工具</div>
+  </div>
+  <div class="gate">
+    <div class="no">L2</div>
+    <div class="nm">个人助手</div>
+    <div class="sym">能帮个人干活，能力跟着人走，同事用不上</div>
+    <div class="key">钥匙：能力沉淀成岗位 Agent</div>
+  </div>
+  <div class="gate">
+    <div class="no">L3</div>
+    <div class="nm">团队成员</div>
+    <div class="sym">人和多个 Agent 同场协作，能 @ 能派活</div>
+    <div class="key">钥匙：Personal 过滤、主管派活、执行干活</div>
+  </div>
+  <div class="gate">
+    <div class="no">L4</div>
+    <div class="nm">自治业务单元</div>
+    <div class="sym">Agent 之间自己接力，上下文原样交接</div>
+    <div class="key">钥匙：主管 Agent 直接谈，人只设目标边界</div>
+  </div>
+  <div class="gate">
+    <div class="no">L5</div>
+    <div class="nm">自演进组织</div>
+    <div class="sym">组织在运行中自己改进，经验写进任务和标准</div>
+    <div class="key">钥匙：吐槽聚类 + 打回沉淀成标准</div>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="motto">执行交给 Agent · 交接变成协议 · <span class="r">人只管方向和担责</span></div>
+  <div class="src">行途 · 技术长文视觉实验</div>
+</div>
+
+</body></html>

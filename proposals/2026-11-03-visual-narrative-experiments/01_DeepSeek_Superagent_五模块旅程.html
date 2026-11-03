@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1280px;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",Arial,sans-serif;padding:56px 64px 48px}
+.hdr{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:36px}
+.hdr h1{font-size:40px;font-weight:800;color:#1a1a1a;letter-spacing:-1px}
+.hdr h1 .r{color:#F2644F}
+.hdr .tag{font-size:15px;color:#9AA0A6;font-weight:600}
+.stage{position:relative;display:flex;align-items:center;gap:26px;margin-bottom:14px}
+.stage .start{width:118px;text-align:center}
+.stage .start .dot{width:58px;height:58px;border-radius:50%;background:#1a1a1a;color:#fff;font-size:15px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.stage .start .lb{font-size:15px;font-weight:700;color:#333}
+.arrowline{position:absolute;left:150px;right:132px;top:29px;height:6px;background:linear-gradient(90deg,#1a1a1a 0%,#555B62 100%);border-radius:3px}
+.arrowline::after{content:"";position:absolute;right:-14px;top:-9px;border:12px solid transparent;border-left:16px solid #1a1a1a}
+.gates{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative;z-index:2;padding-top:4px}
+.gate{background:#fff;border:2.5px solid #F2644F;border-radius:10px;padding:24px 16px 20px;position:relative;box-shadow:0 3px 14px rgba(215,26,27,.10)}
+.gate .no{position:absolute;top:-20px;left:14px;background:#F2644F;color:#fff;font-weight:800;font-size:15px;padding:5px 12px;border-radius:6px}
+.gate .nm{font-size:21px;font-weight:800;color:#1a1a1a;margin:8px 0 6px}
+.gate .sym{font-size:13px;color:#555B62;line-height:1.5}
+.gate .key{margin-top:10px;font-size:12.5px;font-weight:700;color:#1a1a1a;border-top:1px dashed #E2E5E9;padding-top:9px}
+.finish{position:absolute;right:0;top:2px;width:112px;text-align:center}
+.finish .flag{width:64px;height:64px;margin:0 auto 8px;border-radius:12px;background:#1a1a1a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800}
+.finish .lb{font-size:14px;font-weight:800;color:#1a1a1a}
+.foot{margin-top:34px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #E6E8EA;padding-top:16px}
+.foot .motto{font-size:18px;font-weight:800;color:#1a1a1a}
+.foot .motto .r{color:#F2644F}
+.foot .src{font-size:13px;color:#A8ADB3}
+</style></head><body>
+
+<div class="hdr">
+  <h1>Super-agent：一条消息的<span class="r">五模块旅程</span></h1>
+  <div class="tag">概念锚点图 · 无水印矢量渲染</div>
+</div>
+
+<div class="stage">
+  <div class="start"><div class="dot">群聊 / GitHub</div><div class="lb">事件进来</div></div>
+  <div class="arrowline"></div>
+  <div class="finish"><div class="flag">连续 · 高效<br>主动 · 持久</div><div class="lb">收到回执</div></div>
+</div>
+
+<div class="gates">
+  <div class="gate">
+    <div class="no">模块 1</div>
+    <div class="nm">双层架构</div>
+    <div class="sym">一个 Session 串行太慢，每条都开新会话又割裂</div>
+    <div class="key">钥匙：Router 常驻接人，Worker 隔离并发干活</div>
+  </div>
+  <div class="gate">
+    <div class="no">模块 2</div>
+    <div class="nm">事件驱动</div>
+    <div class="sym">群聊噪音高，全塞给模型扛不住延迟和成本</div>
+    <div class="key">钥匙：两级过滤 + 订阅直通，后续消息绕开 Router</div>
+  </div>
+  <div class="gate">
+    <div class="no">模块 3</div>
+    <div class="nm">面向人的交互</div>
+    <div class="sym">工具跑完才能回话，群里推理过程刷屏</div>
+    <div class="key">钥匙：异步 start/stop，群聊限 100 词、PR 写全文</div>
+  </div>
+  <div class="gate">
+    <div class="no">模块 4</div>
+    <div class="nm">存算分离</div>
+    <div class="sym">设备一休眠，Agent 和任务一起停</div>
+    <div class="key">钥匙：计算上云、状态入库，端侧只留轻量 daemon</div>
+  </div>
+  <div class="gate">
+    <div class="no">模块 5</div>
+    <div class="nm">Watchdog</div>
+    <div class="sym">进程活着，模型却在原地打转、跑偏目标</div>
+    <div class="key">钥匙：主系统外独立巡查，发现异常就介入</div>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="motto">单任务看模型 · 多任务看<span class="r">注意力</span> · Session 是系统细节</div>
+  <div class="src">行途 · 技术长文视觉实验</div>
+</div>
+
+</body></html>
