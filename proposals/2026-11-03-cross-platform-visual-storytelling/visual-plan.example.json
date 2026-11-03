@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.2.0",
+  "article_ref": "EXAMPLE_ONLY/fictional-demo",
+  "source_revision": "demo-v1",
+  "design_revision": "DRAFT:design#4",
+  "skill_revision": "PILOT:skills#10",
+  "target_platforms": [
+    "wechat",
+    "xiaohongshu",
+    "x"
+  ],
+  "claims": [
+    {
+      "claim_id": "C-1",
+      "statement": "示意：一个虚构的请求通过检查、分发、执行和回执完成",
+      "evidence_status": "HYPOTHESIS",
+      "source_refs": [
+        "fictional-demo-not-real-system"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "A-static",
+      "claim_ids": [
+        "C-1"
+      ],
+      "representation": "original_diagram",
+      "platforms": [
+        "wechat",
+        "xiaohongshu",
+        "x"
+      ],
+      "permission_status": "NOT_APPLICABLE",
+      "render_status": "NOT_RUN",
+      "review_status": "NOT_RUN",
+      "mobile_review_status": "NOT_RUN",
+      "source_path": "",
+      "rendered_files": [],
+      "sha256": null,
+      "fallback_asset_id": null,
+      "caption": "概念示意，不是具体产品内部架构。"
+    },
+    {
+      "asset_id": "A-motion",
+      "claim_ids": [
+        "C-1"
+      ],
+      "representation": "motion",
+      "platforms": [
+        "wechat"
+      ],
+      "permission_status": "NOT_APPLICABLE",
+      "render_status": "NOT_RUN",
+      "review_status": "NOT_RUN",
+      "mobile_review_status": "NOT_RUN",
+      "source_path": "",
+      "rendered_files": [],
+      "sha256": null,
+      "fallback_asset_id": "A-static",
+      "caption": "待制作的动态图，失败时回退 A-static。"
+    }
+  ],
+  "public_release_approved": false,
+  "notes": "本例没有实际图片、GIF、微信草稿或已通过的测试。"
+}
