@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XingTu Visual Asset Plan Contract v0.2",
+  "description": "Draft machine-readable plan only, not publishing authorization.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "article_ref",
+    "source_revision",
+    "design_revision",
+    "skill_revision",
+    "target_platforms",
+    "claims",
+    "assets",
+    "public_release_approved"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "article_ref": {
+      "type": "string",
+      "description": "Private if populated; keep instance in authorized Vault"
+    },
+    "source_revision": {
+      "type": "string",
+      "description": "Actual article revision"
+    },
+    "design_revision": {
+      "type": "string",
+      "description": "Approved design commit or clearly marked draft"
+    },
+    "skill_revision": {
+      "type": "string",
+      "description": "Actual loaded skill version or pilot PR"
+    },
+    "target_platforms": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "wechat",
+          "xiaohongshu",
+          "x",
+          "moments",
+          "other"
+        ]
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "statement",
+          "evidence_status",
+          "source_refs"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^C-[A-Za-z0-9_-]+$"
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_status": {
+            "enum": [
+              "VERIFIED",
+              "SOURCE_CLAIM",
+              "INTERNAL_REDACTED",
+              "ESTIMATE",
+              "HYPOTHESIS",
+              "UNVERIFIED"
+            ]
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_id",
+          "claim_ids",
+          "representation",
+          "platforms",
+          "permission_status",
+          "render_status",
+          "review_status",
+          "source_path",
+          "fallback_asset_id"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "pattern": "^A-[A-Za-z0-9_-]+$"
+          },
+          "claim_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "representation": {
+            "enum": [
+              "official_screenshot",
+              "real_world_capture",
+              "original_diagram",
+              "ai_concept",
+              "data_chart",
+              "motion"
+            ]
+          },
+          "platforms": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "wechat",
+                "xiaohongshu",
+                "x",
+                "moments",
+                "other"
+              ]
+            }
+          },
+          "permission_status": {
+            "enum": [
+              "LICENSED",
+              "EDITORIAL_REVIEWED",
+              "PENDING",
+              "NOT_APPLICABLE",
+              "BLOCKED"
+            ]
+          },
+          "render_status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN"
+            ]
+          },
+          "review_status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN"
+            ]
+          },
+          "mobile_review_status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN"
+            ]
+          },
+          "source_path": {
+            "type": "string",
+            "description": "Editable SVG/HTML/project path, empty if not yet generated"
+          },
+          "rendered_files": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "fallback_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "caption": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "public_release_approved": {
+      "const": false,
+      "description": "Publishing approval remains in private publishing workflow"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
